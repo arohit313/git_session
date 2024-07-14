@@ -1,0 +1,67 @@
+GitHub Link
+https://github.com/sr1983-it-gl/09_GL_FE_Nov_2023_Participants/tree/main/06-Lab-03/Weather-App
+
+
+
+Open Weather
+
+https://openweathermap.org/
+
+
+API Keys
+https://home.openweathermap.org/api_keys
+
+
+API
+https://openweathermap.org/current#one
+Sample API
+Format
+https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}&units=metric
+Example
+https://api.openweathermap.org/data/2.5/weather?q=Delhi&appid=0a5eb987803a68457bc1f43354c8e756&units=metric
+
+
+JSON Formatter Plugin
+https://chromewebstore.google.com/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa
+
+
+
+
+Tasks
+Implement constructURL method
+Install NodeJS
+“node –version”
+Testing
+Go to project directory
+Command
+npm init --yes
+Update package.json with the following
+  "type": "module"
+Add comma before the statement
+Testing
+node weather-app\weather-api-test.js
+Implement invokeURL
+Test invokeURL
+Application class - EventHandling Implementation - Initial
+Testing
+Go to the project directory
+Install Http-Server
+npm install -global http-server
+Start the Server
+http-server --port 8888
+Access the Application
+http://localhost:8888
+Invoke-API and Update UI
+Location
+{responseDocument.name}, {responseDocument.sys.country
+}
+Date
+
+
+Temperature
+{responseDocument.main.temp}
+Type
+{responseDocument.weather[0].main}
+Min / Max
+{responseDocument.main.temp_min} / {responseDocument.main.temp_max}
+
