@@ -1,0 +1,65 @@
+GitHub URL
+https://github.com/sr1983-it-gl/09_GL_FE_Nov_2023_Participants/tree/main/08-Lab-04/expense-splitter-app/client
+
+
+Tasks
+Project Initial Setup	
+Creation of a project folder
+expense-splitter-app
+Create sub-folders for client and server
+expense-splitter-app/server
+expense-splitter-app/client
+Initialize Client application
+Go to client directory
+Command
+“npx create-react-app .”
+Server application
+Presence of the expenses.json
+Go to server directory
+npm init --yes
+npm install -g json-server
+json-server --watch expenses.json --port 4000
+Verification
+Get All Expenses
+http://localhost:4000/expenses
+Get Expense By ID
+http://localhost:4000/expenses/3
+Get Expenses based on Payee
+http://localhost:4000/expenses?payeeName=Ramesh
+Service Layer
+Launch new client terminal
+Command
+npm install axios
+Addition of the service/expense.js file
+Changes to App.js
+Reference ExpenseSplitterApp component
+ExpenseSplitterApp
+Include functionalities related to useEffect
+Create a new component to display the Expense Items
+Part-I
+Creation of the new component
+ExpenseItemsView
+Install the bootstrap libraries
+npm install bootstrap react-bootstrap
+Reference table Code
+https://react-bootstrap.netlify.app/
+Part-II
+App component [ExpenseSplitterApp] maintains the expense-items
+Define the state for expenseItems
+Make use of useState hook for ‘expenseItems’
+A need to pass ‘expense-items’ from App to [ExpenseItemsView]
+Add a prop
+To receive the ‘expense-items’
+Creation of Expense Item
+Part-I
+Building the initial UI for ‘Add-expense’
+For this,
+Modal
+Form
+Part-II
+Modal and Form - cleanup activities
+Dynamic population of PayeeName
+
+
+set NODE_OPTIONS=--openssl-legacy-provider
+npm install react-scripts@latest
